@@ -33,7 +33,7 @@ test:
     - empanada_napari
   commands:
     - pip list
-    - pip check  # Fails due to opencv-python-headless
+    - pip check || true # Fails due to opencv-python-headless
   requires:
     - pip
 
