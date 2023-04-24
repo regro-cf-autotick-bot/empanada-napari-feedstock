@@ -20,19 +20,20 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
-    - empanada-dl >=0.1.4
+    - empanada-dl >=0.1.7
     - imagecodecs
-    - napari >=0.4.13
+    - napari >=0.4.16
     - napari-plugin-engine >=0.1.4
     - python >=3.7
-    - scikit-image >=0.18
+    - scikit-image >=0.19
+    - numpy <1.23.0a0
 
 test:
   imports:
     - empanada_napari
   commands:
     - pip list
-    # - pip check  # Fails due to opencv-python-headless
+    - pip check  # Fails due to opencv-python-headless
   requires:
     - pip
 
